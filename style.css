@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    display: block;
+}
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+h2, li {
+    margin-left: 3rem;
+    line-height: 2.5;
+}
+
+p {
+    margin-left: 4rem;
+    line-height: 2.5;
+}
+
+h2 {
+    color: salmon;
+}
+
+nav ul {
+    background-color: teal;
+    height: 3rem;
+    margin: 0;
+    
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 1.5rem;
+    font-size: 1.2rem;
+    color: salmon;
+    margin-left: 0 !important;
+}
+
+a {
+    text-decoration: none;
+    color: salmon;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+h1 {
+    text-align: center;
+    background-color: salmon;
+    margin-top: 10rem;
+    height: 5rem;
+    padding-top: 1rem;
+}
+
+.goals {
+    margin: 10rem auto;
+}
+
+.goals img {
+    width: 20%;
+    transition: transform 1s ease-in-out;
+    margin-left: 5rem;
+}
+
+.goals img:hover {
+    opacity: 0.8;
+    transform: scale(0.8);
+}
+
+.dosomethinggreat img{
+    width: 20%;
+    margin-left: 5rem;
+    transition: transform 1s ease-in-out;
+}
+
+.dosomethinggreat img:hover {
+    transform: scale(0.8);
+    opacity: 0.8;
+}
+
+.thanks {
+    display: flex;
+    justify-content: center;
+}
+
+.thanks img {
+    width: 40%;
+    margin: 4rem 0;
+    
+}
+
+@media only screen and (min-width: 1050px) and (max-width: 1670px) {
+    .goals img {
+        margin-left: 2.6rem;
+    }
+    .dosomethinggreat img {
+        margin-left: 2.6rem;
+    }
+}
+
+@media only screen and (max-width: 1049px) {
+    .goals img {
+        width: 100%;
+        margin-left: 0rem;
+    }
+    .dosomethinggreat img {
+        width: 100%;
+        margin-left: 0rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    nav li {
+        font-size: 0.8rem;
+    }
+    nav ul {
+        height: 1.9rem;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    nav li {
+        font-size: 1.1rem;
+        display: block;
+    }
+    nav ul {
+        height: 8.5rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    h1 {
+        height: 7rem;
+    }
+}
